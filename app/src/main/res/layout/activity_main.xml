@@ -19,7 +19,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/places_list"
+        android:id="@+id/bus_stop_list"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"/>
 </RelativeLayout>
