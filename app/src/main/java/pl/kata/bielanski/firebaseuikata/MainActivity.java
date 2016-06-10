@@ -7,7 +7,9 @@ import com.firebase.client.Firebase;
 
 import butterknife.ButterKnife;
 
+
 public class MainActivity extends AppCompatActivity {
+	Firebase mRootRef;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -15,5 +17,6 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 		ButterKnife.bind(this);
 		Firebase.setAndroidContext(this);
+		mRootRef = new Firebase("https://glowing-torch-4628.firebaseio.com/BusStopList");
 	}
 }
